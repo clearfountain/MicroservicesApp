@@ -49,5 +49,16 @@ namespace Discount.Grpc.Services
             var couponModel = _mapper.Map<CouponModel>(coupon);
             return couponModel;
         }
+
+        public override async Task<CouponModel> UpdateDiscount(UpdateDiscountRequest request, ServerCallContext context)
+        {
+            var coupon = _mapper.Map<Coupon>(request.Coupon);
+
+            await _repository.UpdateDiscount(coupon);
+            _logger.LogInformation("Discount is successfully updated. ProductName : {ProductName}", coupon.ProductName);
+
+            var couponModel = _mapper.Map<CouponModel>(coupon);
+            return couponModel;
+        }
     }
 }
