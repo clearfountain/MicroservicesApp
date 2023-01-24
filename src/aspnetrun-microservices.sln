@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{E1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{7DF06341-2D13-44BE-9B6C-0B78587D9142}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{58D2C021-10C1-46EE-B1E5-51E71DD64137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{01278F03-1FD2-479B-9D56-668A0F821D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,14 @@ Global
 		{7DF06341-2D13-44BE-9B6C-0B78587D9142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DF06341-2D13-44BE-9B6C-0B78587D9142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DF06341-2D13-44BE-9B6C-0B78587D9142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D2C021-10C1-46EE-B1E5-51E71DD64137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D2C021-10C1-46EE-B1E5-51E71DD64137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D2C021-10C1-46EE-B1E5-51E71DD64137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D2C021-10C1-46EE-B1E5-51E71DD64137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01278F03-1FD2-479B-9D56-668A0F821D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01278F03-1FD2-479B-9D56-668A0F821D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01278F03-1FD2-479B-9D56-668A0F821D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01278F03-1FD2-479B-9D56-668A0F821D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{998A6B36-DD31-45AF-B91B-3DE9EFCF3493} = {68B0BADE-9B7F-45C6-8F3F-B7DA66F727D6}
 		{E14F3021-51FE-40E7-8B1D-13557B1AC69A} = {D7F8031D-56F2-4C32-B3D8-C99B7F0805BD}
 		{7DF06341-2D13-44BE-9B6C-0B78587D9142} = {E14F3021-51FE-40E7-8B1D-13557B1AC69A}
+		{58D2C021-10C1-46EE-B1E5-51E71DD64137} = {E14F3021-51FE-40E7-8B1D-13557B1AC69A}
+		{01278F03-1FD2-479B-9D56-668A0F821D84} = {E14F3021-51FE-40E7-8B1D-13557B1AC69A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACC0842F-AD45-49CE-A800-D6532250AC83}
