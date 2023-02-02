@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Ordering.Application.Contracts.Persistence;
+using Ordering.Application.Models;
 using Ordering.Infrastructure.Persistence;
 using Ordering.Infrastructure.Repositories;
 using System;
@@ -21,6 +22,8 @@ namespace Ordering.Infrastructure
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>)); //typeof needed becaue of MediatR
             services.AddScoped<IOrderRepository, OrderRepository>();
+
+            services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
 
             return services;
         }
